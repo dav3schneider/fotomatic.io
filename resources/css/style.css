@@ -41,7 +41,7 @@ html {
   }
 }
 
-/* Header */
+/*------------------------------------------------- Header */
 
 header {
   position: fixed;
@@ -164,7 +164,7 @@ header .tablet {
   }
 }
 
-/* Sign Up Section */
+/*------------------------------------- Sign Up Section */
 
 #sign-up-section {
   display: flex;
@@ -222,10 +222,11 @@ header .tablet {
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  background-color: #4a4a4a;
 }
 
 /* Tablet Size */
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 768px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -258,7 +259,7 @@ header .tablet {
 }
 
 /* Mobile Size */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 732px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -273,6 +274,8 @@ header .tablet {
     font-size: 2rem;
   }
 }
+
+/*----------------------------- Features Section */
 
 /* Features Section */
 
@@ -296,6 +299,10 @@ header .tablet {
   margin: 0 auto;
 }
 
+.feature .content {
+  padding: 2.5rem 0;
+}
+
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
@@ -310,11 +317,19 @@ header .tablet {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 768px) {
+  #features-section {
+    padding: 1rem;
+  }
+
+  .feature {
+    margin: 0px .5rem;
+    padding: 1rem;
+  }
+
   .feature h2 {
-    font-size: 1.125rem;
+    font-size: 2rem;
     line-height: 1.3;
-    font-weight: normal;
   }
 
   .feature h3 {
@@ -323,7 +338,11 @@ header .tablet {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 732px) {
+  #feature-1 {
+    background-color: #D4D5D6;
+  }
+
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -332,6 +351,10 @@ header .tablet {
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+  }
+
+  .feature .content {
+    padding: 1.25rem 0 1.875rem 0;
   }
 }
 
@@ -363,9 +386,10 @@ header .tablet {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 732px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -401,11 +425,14 @@ header .tablet {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -414,24 +441,33 @@ header .tablet {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
-  #quotes-section content {
+@media only screen and (max-width: 768px) {
+  #quotes-section .content {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  #quotes-section .content {
+    flex-flow: column;
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
+    height: auto;
+    width: 25%;
   }
 }
 
@@ -452,7 +488,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 732px) {
   footer .content {
     font-size: .625rem;
   }
